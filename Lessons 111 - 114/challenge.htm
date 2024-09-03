@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .form {
+                background-color: #BBB;
+                padding: 20px 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+            .form .input {
+                outline: none;
+                height: 30px;
+                width: 300px;
+                border-radius: 6px;
+                flex-grow: 1;
+                gap: 20px;
+                padding: 5px 30px;
+            }
+            .form .add {
+                height: 30px;
+                width: 100px;
+                background-color: orangered;
+                color: white;
+                border-radius: 6px;
+                border: none;
+                cursor: pointer;
+                margin-left: 50px;
+            }
+            .tasks {
+                background-color: #BBB;
+                padding: 20px 30px;
+                border-radius: 10px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .tasks .task {
+                background-color: white;
+                padding: 10px 20px;
+                border-radius: 6px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .tasks .task .del-btn {
+                background-color: red;
+                color: white;
+                width: fit-content;
+                padding: 5px;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <input type="text" class="input">
+                <input type="submit" class="add" value="Add Task">
+            </div>
+            <div class="tasks"></div>
+        </div>
+        <script src="JS/challenge.js"></script>
+    </body>
+</html>
